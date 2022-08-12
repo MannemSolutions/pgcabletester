@@ -1,0 +1,21 @@
+---
+debug: false
+hosts:
+  localhost:
+    rootCert: |
+      ------------ WHATEVER ------------
+    ports:
+      - 5432
+      - 5433
+users:
+  postgres:
+    password: whatever
+    clientCert: |
+      ------------ WHATEVER ------------
+    clientCertKey: |
+      ------------ WHATEVER ------------
+    databases:
+      postgres:
+        tables:
+          - pg_stat_activity
+
